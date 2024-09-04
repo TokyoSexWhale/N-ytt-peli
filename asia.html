@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kierrätyspeli</title>
+    <link rel="stylesheet" href="asia.css">
+</head>
+<body>
+    <h1>Kierrätyspeli</h1>
+    <div id="container">
+        
+        <div id="external-parts">
+            
+            <div id="router" class="item" draggable="true" data-type="Elektroniikka">
+                <img src="images/Reititin.JPG" alt="Reititin">
+                <span>WiFi Reititin</span>
+            </div>
+            <div id="table" class="item" draggable="true" data-type="Orgaaninen">
+                <img src="images/Pöytä.JPG" alt="Pöytä">
+                <span>Pöytä</span>
+            </div>
+            <div id="monitor" class="item" draggable="true" data-type="Elektroniikka">
+                <img src="images/Näyttö.JPG" alt="Koneen näyttö">
+                <span>Koneen näyttö</span>
+            </div>
+            <div id="mouse" class="item" draggable="true" data-type="Muovi">
+                <img src="images/Hiiri.JPG" alt="Hiiri">
+                <span>Hiiri</span>
+            </div>
+            <div id="mousepad" class="item" draggable="true" data-type="Muovi">
+                <img src="images/Hiirimatto.JPG" alt="Hiirimatto">
+                <span>Hiirimatto</span>
+            </div>
+            <div id="headphones" class="item" draggable="true" data-type="Elektroniikka">
+                <img src="images/Kuulokkeet.JPG" alt="Kuulokkeet">
+                <span>Kuulokkeet</span>
+            </div>
+
+            <div id="phone" class="item" draggable="true" data-type="Elektroniikka">
+                <img src="images/Puhelin.jpg" alt="Puhelin">
+                <span>Puhelin</span>
+            </div>
+        </div>
+
+        <button id="pura-btn" class="small-button">Pura Tietokone</button>
+        <div id="box" class="box"></div>
+
+        <button id="pura-puhelin-btn" class="small-button">Pura Puhelin</button>
+        <div id="phone-box" class="box"></div>
+    </div>
+
+    <div class="bins-container">
+        <div id="elektroniikka" class="recycling-bin" data-type="elektroniikka">
+            <img src="images/e waste.jpg" alt="Elektroniikka jäte">
+            <span>Elektroniikka</span>
+        </div>
+        <div id="metalli" class="recycling-bin" data-type="metalli">
+            <img src="images/Metalli waste.jpg" alt="Metalli jäte">
+            <span>Metalli</span>
+        </div>
+        <div id="muovi" class="recycling-bin" data-type="muovi">
+            <img src="images/Muovi waste.jpg" alt="Muovi jäte">
+            <span>Muovi</span>
+        </div>
+        <div id="orgaaninen" class="recycling-bin" data-type="orgaaninen">
+            <img src="images/Orgaaninen waste.jpg" alt="Orgaaninen jäte">
+            <span>Orgaaninen</span>
+        </div>
+        <div id="Ongelmajäte" class="recycling-bin" data-type="Ongelmajäte">
+            <img src="images/Haitta waste.jpg" alt="Ongelmajäte jäte">
+            <span>Ongelmajäte</span>
+        </div>
+    </div>
+
+    <div id="message-container" style="display: true">
+        <h2>Kaikki osat on kierrätetty.</h2>
+        <button id="restart-btn">Pelaa uudestaan</button>
+    </div>
+    
+
+    <script src="asia.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('images/Kuva.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    color: white; 
+}
+
+h1 {
+    color: #fff; 
+    margin-bottom: 20px;
+}
+
+button, .small-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover, .small-button:hover {
+    background-color: #0056b3;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#external-parts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.item {
+    width: 100px;
+    text-align: center;
+    margin: 10px;
+}
+
+.item img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.item span {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#box {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('images/Tausta3.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#phone-box {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('images/Tausta3.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.bins-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    margin-top: auto;
+}
+
+.recycling-bin {
+    flex: 1;
+    height: 150px;
+    border: 2px solid #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); 
+    color: #000;
+}
+
+.recycling-bin:not(:last-child) {
+    border-right: none;
+}
+
+.recycling-bin img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin-bottom: 5px;
+}
